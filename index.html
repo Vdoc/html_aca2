@@ -1,128 +1,124 @@
 <!DOCTYPE html>
 <html lang="ru"><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <title>Новости культуры</title>
-    <link href="files/css_002.css" rel="stylesheet">
-    <link href="files/css.css" rel="stylesheet">
     <link rel="stylesheet" href="files/style.css">
-    <link rel="icon" href="files/logo.svg" type="image/x-icon">
 </head>
 
 <body>
-    <div class="header" id="top">
-        <div class="positioner">
-            <h1 class="header-title">Новости культуры</h1>
-            <div class="header-menu">
-                <a class="menu-item" href="">Новости</a>
-                <a class="menu-item" href="">Обзоры</a>
-                <a class="menu-item" href="">Музыка</a>
-                <a class="menu-item" href="">Архитектура</a>
-                <a class="menu-item" href="">Кино</a>
-                <a class="menu-item" href="">Театр</a>
-                <a class="menu-item" href="">Литература</a>
-                <a class="menu-item" href="">Религия</a>
-                <a class="menu-item" href="">Живопись</a>
+
+    <header>
+        <nav>
+            <div class="wrapper wrapper-header">
+            <a>
+                <img class="header-logo" src="files/logo-header.svg" width="347" height="47">
+            </a>
+
+            <ul class="site-navigation-list">
+                <li class="site-navigation-list__item"><a class="site-navigation-list__link" href="#">Новости</a></li>
+                <li class="site-navigation-list__item"><a class="site-navigation-list__link" href="#">Обзоры</a></li>
+                <li class="site-navigation-list__item"><a class="site-navigation-list__link" href="#">Музыка</a></li>
+                <li class="site-navigation-list__item"><a class="site-navigation-list__link" href="#">Архитектура</a></li>
+                <li class="site-navigation-list__item"><a class="site-navigation-list__link" href="#">Кино</a></li>
+                <li class="site-navigation-list__item"><a class="site-navigation-list__link" href="#">Театр</a></li>
+                <li class="site-navigation-list__item"><a class="site-navigation-list__link" href="#">Литература</a></li>
+                <li class="site-navigation-list__item"><a class="site-navigation-list__link" href="#">Религия</a></li>
+                <li class="site-navigation-list__item"><a class="site-navigation-list__link" href="#">Живопись</a></li>
+            </ul>
+        </div></nav>
+    
+    </header>
+
+
+    <main>
+        <h1 class="visually-hidden">Новости культуры</h1>
+
+        <section class="headline">
+            <div class="wrapper">
+            <img class="headline__image" src="files/background-image.jpg" width="1440" height="464">
+            <h2 class="headline__title">Подводный отель</h2>
+            <p class="headline__subtitle">Как известно, Дубай – город контрастов. Самые революционные
+                <br>и фантастические мечты архитекторов способен воплотить в жизнь этот мегаполис, построенный на нефти и за
+                счет нефти</p>
             </div>
+        </section>
 
-        </div>
-    </div>
-
-    <section class="description">
-        <div class="positioner">
-            <img src="files/logo.svg">
-            <div class="description-title">Подводный отель</div>
-            <div class="description-text"> Как известно, Дубай – город контрастов.
-                Самые революционные <br>и фантастические мечты архитекторов 
-                способен воплотить в жизнь <br>этот мегаполис, построенный 
-                на нефти и за счет нефти
-            </div>
-        </div>
-    </section>
-
-
-    <section class="reviews">
-        <div class="positioner">
-            <div class="review-title">Обзоры</div>
-            <div class="column-wrapper">
-                <div class="column">
-                    <img src="files/pic1.jpg" class="column-pic">
-                    <h2 class="column-title">«Шальные годы» Монпарнаса</h2>
-                    <p class="column-text">В Музее изобразительных искусств 
-                        имени Пушкина с 29 сентября по 29 ноября проходит 
-                        выставка «Шальные годы Монпарнаса»</p>
-                </div>
-                <div class="column">
-                    <img src="files/pic2.png" class="column-pic">
-                    <h2 class="column-title">Анатомия за 30 секунд</h2>
-                    <p class="column-text">Сейчас, когда мир открыт нараспашку 
-                        для человека и его познавательных изысканий, интерес
+        <section class="reviews">
+            <div class="wrapper">
+            <h2 class="reviews__title">Обзоры</h2>
+            <ul class="reviews-list">
+                <li class="reviews-list__item">
+                    <a href="#"><img src="files/review-image-1.jpg" width="370" height="203"></a>
+                    <h3><a class="reviews-list__title" href="#">«Шальные годы» Монпарнаса</a></h3>
+                    <p class="review-list__description">В Музее изобразительных искусств имени Пушкина с 29 сентября по 29 ноября проходит выставка
+                        «Шальные годы Монпарнаса»</p>
+                </li>
+                <li class="reviews-list__item">
+                    <a href="#"><img src="files/review-image-2.png" width="370" height="203"></a>
+                    <h3><a class="reviews-list__title" href="#">Анатомия за 30 секунд</a></h3>
+                    <p class="review-list__description">Сейчас, когда мир открыт нараспашку для человека
+                        и его познавательных изысканий, интерес
                         к научно‑популярной литературе заметно вырос</p>
-                </div>
-                <div class="column">
-                    <img src="files/pic3.jpg" class="column-pic">
-                    <h2 class="column-title">Сферические чудаки</h2>
-                    <p class="column-text">Корреспондентам «Культурного обозревателя» 
-                        посчастливилось побывать в театре «Сфера» на премьере спектакля 
-                        «Чудаки и зануды» </p>
-                </div>
-            </div>
+                </li>
+                <li class="reviews-list__item">
+                    <a href="#"><img src="files/review-image-3.jpg" width="370" height="203"></a>
+                    <h3><a class="reviews-list__title" href="#">Сферические чудаки</a></h3>
+                    <p class="review-list__description">Корреспондентам «Культурного обозревателя» посчастливилось побывать в театре «Сфера» на премьере
+                        спектакля «Чудаки и зануды»</p>
+                </li>
+            </ul>
         </div>
-    </section>
+        </section>
 
-
-    <section class="tickets">
-        <div class="positioner">
-             <div class="circle">
-            <div class="tickets-title">Абонементы в театр</div>
-            <div class="ticket-option">
-                <p class="option-title">Скидка 50% на весь сезон 2020</p>
-                <div class="option-text">Покупая абонемент на сезон 2020 года 
-                    вы сэкономите половину стоимости всех спектаклей</div>
-            </div>
-            <div class="ticket-option ticket-option-line">
-
-            </div>
-            <div class="ticket-option">
-                <p class="option-title">Места у сцены</p>
-                <div class="option-text">Только для обладателей абонементов 
-                    будет возможность сесть поближе к сцене</div>
-            </div>
-            <div class="ticket-option ticket-option-line">
-
-            </div>
-            <div class="ticket-option">
-                <p class="option-title">Автограф-сессия актёров</p>
-                <div class="option-text">После спектаклей у вас будет возможность 
-                    пообщаться с актёрами и взять у них автограф</div>
-            </div>
-            <button class="tickets-btn">Смотреть <img class="btn-logo" src="files/arrow.png"></button>
-            </div>
+        <section class="abonements">
+            <div class="wrapper">
+            <h2 class="abonements__title">Абонементы в театр</h2>
+          <ul class="abonements-list">
+                <li class="abonements-list__item">
+                    <h3><a class="abonements-list__title" href="#">Скидка 50% на весь сезон 2020</a></h3>
+                    <p class="abonements-list__description">Покупая абонемент на сезон 2020 года вы сэкономите половину стоимости всех спектаклей</p>
+                </li>
+                <li class="abonements-list__item">
+                    <h3><a class="abonements-list__title" href="#">Места у сцены</a></h3>
+                    <p class="abonements-list__description">Только для обладателей абонементов будет возможность сесть поближе к сцене</p>
+                </li>
+                <li class="abonements-list__item">
+                    <h3><a class="abonements-list__title" href="#">Автограф-сессия актёров</a></h3>
+                    <p class="abonements-list__description">После спектаклей у вас будет возможность пообщаться с актёрами и взять у них автограф</p>
+                </li>
+            </ul>
+            <a href="#" class="abonements__button">Смотреть</a>
         </div>
-    </section>
+        </section>
+    </main>
+    <footer>
+        <div class="wrapper">
+            <a>
+                <img class="footer-logo" src="files/logo-footer.svg" width="281" height="38">
+            </a>
+        <ul class="footer-navigation-list">
+            <li class="footer-navigation-list__item"><a class="footer-navigation-list__link" href="#">Новости</a></li>
+            <li class="footer-navigation-list__item"><a class="footer-navigation-list__link" href="#">Обзоры</a></li>
+            <li class="footer-navigation-list__item"><a class="footer-navigation-list__link" href="#">Музыка</a></li>
+            <li class="footer-navigation-list__item"><a class="footer-navigation-list__link" href="#">Архитектура</a></li>
+            <li class="footer-navigation-list__item"><a class="footer-navigation-list__link" href="#">Кино</a></li>
+            <li class="footer-navigation-list__item"><a class="footer-navigation-list__link" href="#">Театр</a></li>
+            <li class="footer-navigation-list__item"><a class="footer-navigation-list__link" href="#">Литература</a></li>
+            <li class="footer-navigation-list__item"><a class="footer-navigation-list__link" href="#">Религия</a></li>
+            <li class="footer-navigation-list__item"><a class="footer-navigation-list__link" href="#">Живопись</a></li>
+        </ul>
 
-
-    <div class="footer">
-        <div class="positioner">
-            <div class="footer-title"><a href="#top">Новости культуры</a></div>
-            <div class="footer-menu">
-                <a class="menu-item" href="">Новости</a>
-                <a class="menu-item" href="">Обзоры</a>
-                <a class="menu-item" href="">Музыка</a>
-                <a class="menu-item" href="">Архитектура</a>
-                <a class="menu-item" href="">Кино</a>
-                <a class="menu-item" href="">Театр</a>
-                <a class="menu-item" href="">Литература</a>
-                <a class="menu-item" href="">Религия</a>
-                <a class="menu-item" href="">Живопись</a>
-            </div>
-            <div class="links">
-                <a href="" class="link-btn"><img src="files/instagram.svg"></a>
-                <a class="link-btn"><img src="files/facebook.svg"></a>
-                <a class="link-btn"><img src="files/twitter.svg"></a>
-            </div>
-        </div>
+        <ul class="social-list">
+            <li class="social-list__item"><a href="#">
+                <img src="files/icon-instagram.svg" width="23" height="24">
+            </a></li>
+            <li class="social-list__item"><a href="#">
+                <img src="files/icon-fb.svg" width="12" height="22">
+            </a></li>
+            <li class="social-list__item"><a href="#">
+                <img src="files/icon-twitter.svg" width="22" height="18"></a></li>
+        </ul>
     </div>
-
-
+    </footer>
 </body></html>

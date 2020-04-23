@@ -1,298 +1,445 @@
-*{
-    margin: 0;
-    box-sizing: border-box;
+/*--------------------------Шрифты---------------------------------*/
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto/Roboto-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto/Roboto-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PlayfairDisplay";
+    src: url("../fonts/Playfair/PlayfairDisplay-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PlayfairDisplay";
+    src: url("../fonts/Playfair/PlayfairDisplay-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PlayfairDisplay";
+    src: url("../fonts/Playfair/PlayfairDisplay-Black.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+/*--------------------------Global---------------------------------*/
+.visually-hidden {
+    font-size: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0, 0, 0, 0);
+}
+
+.wrapper {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.wrapper-header {
+    display: flex;
+    flex-direction: column;
 }
 
 body {
-    font-size: 14px;
+    margin: 0;
     padding: 0;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
 }
 
-.header{
-    padding-top: 60px;
+h3 {
+    margin: 0;
+}
+/*--------------------------Header---------------------------------*/
+.header-logo {
+    margin-top: 65px;
+    margin-bottom: 38px;
+    margin-left: 545px;
+}
+
+.site-navigation-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    margin-left: 135px;
     margin-bottom: 47px;
 }
 
-.positioner{
-    margin: 0 auto;   
-    width: 1172px;
+.site-navigation-list__item {
+    margin-right: 54px;
 }
 
-.header .positioner{
-    min-height: 112px;
+.site-navigation-list__item:nth-child(3) {
+    margin-right: 50px;
 }
 
-h1{
-    font-family: 'Playfair Display', serif;
-    font-weight: 900;
-    font-size: 35px;
-    line-height: 47px;
-    letter-spacing: 1px;
-    text-align: center;
+.site-navigation-list__item:nth-child(4) {
+    margin-right: 49px;
 }
 
-.header-menu{
-    margin-top: 46px;
-    display: flex;
-    justify-content: space-between;
+.site-navigation-list__item:nth-child(7) {
+    margin-right: 47px;
 }
 
-.menu-item{
-    text-transform: uppercase;
+.site-navigation-list__item:last-child {
+    margin-right: 0;
+}
+
+.site-navigation-list__link {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
     font-size: 15px;
     line-height: 18px;
     letter-spacing: 2px;
-}
-
-.menu-item:hover{
-    color: #FF7931;
-}
-
-a{
-    color: black;
     text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
 }
 
-.description{
-    margin-bottom: 44px;
-    background: url(img/Mask%20Group.jpg) 50% 50% no-repeat;
-    background-size: 100% 100%;
-    color: white;
-}
-
-.description .positioner{
-    min-height: 464px;
-    text-align: center;
-}
-
-.description img{
-    margin-top: 46px;
-    margin-bottom: 32px;
-}
-
-.description-title{
+/*--------------------------Headline section---------------------------------*/
+.headline__title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
     font-size: 72px;
     line-height: 84px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-bottom: 130px;
-}
-
-.description-text{
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 400;
-}
-
-.reviews{
-    margin-bottom: -40px;
-}
-
-.reviews .positioner{
-    min-height: 463px;
-}
-
-.review-title{
     text-align: center;
-    font-weight: bold;
-    font-size: 17px;
-    line-height: 20px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin-bottom: 20px;
-}
-
-.column{
-    width: 370px;
-}
-
-.column-wrapper{
-    display: flex;
-    justify-content: space-between;
-}
-
-.column-title{
-    font-family: 'Playfair Display', serif;
-    font-weight: 900;
-    font-size: 23px;
-    line-height: 31px;
-    margin-top: 20px;
-    margin-bottom: 11px;
-}
-
-.column-title:hover{
-    color: #FF7931;
-}
-
-.column-text{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
+    color: #FFFFFF;
     margin: 0;
-    padding-right: 10px;;
-}
-
-.tickets{
-    margin-bottom: 50px;
-    background-color: #F7F7F7;
-    text-align: center;
-}
-
-
-.tickets .positioner{
-    height: 556px;
-    box-sizing: border-box;
+    margin-top: -335px;
     position: relative;
 }
 
-.circle{
-    height: 707px;
-    width: 707px;
-    border-radius: 50%;
-    box-sizing: border-box;
-    padding-top: 108px;
+.headline__title::before {
     position: absolute;
-    left: 233px;
-    top: -75px;
-    background-image: linear-gradient(180deg, 
-    transparent 75px, 
-    #fff 75px, 
-    #fff 631px, 
-    transparent 631px);
+    content: "";
+    width: 55px;
+    height: 55px;
+    top: -88px;
+    left: 48.2%;
+    background-image: url("../img/icon-hotel.svg");
 }
 
-.tickets-title{
-    padding-bottom: 35px;
+.headline__subtitle {
+    width: 456px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+    margin-top: 134px;
+    margin-left: 492px;
+}
+
+
+/*--------------------------Reviews section---------------------------------*/
+.reviews {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    z-index: 100;
+}
+
+.reviews__title {
+    font-family: "Roboto";
+    font-style: normal;
     font-weight: bold;
     font-size: 17px;
     line-height: 20px;
     letter-spacing: 2px;
     text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+    margin: 0;
+    margin-left: 680px;
+    margin-top: 92px;
 }
 
-.ticket-option{
-    width: 370px;
-    height: 104px;
-    margin: 0 auto 25px;
+.reviews-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    margin-top: 21px;
+    margin-left: 137px;
 }
 
-.ticket-option-line{
-    width: 100px;
-    height: 0;
-    border: 1px solid rgba(97, 16, 16, 0.2);
-    opacity: 0.4;
-    margin-top: -25px;
+.reviews-list__item {
+    margin-right: 29px;
+    z-index: 100;
 }
 
-.option-title{
-    font-family: 'Playfair Display', serif;
+.reviews-list__item:last-child {
+    margin-right: 0;
+}
+
+.reviews-list__title {
+    display: block;
+    font-family: "PlayfairDisplay";
     font-style: normal;
     font-weight: 900;
     font-size: 23px;
     line-height: 31px;
+    text-decoration: none;
+    color: #000000;
+
+    margin: 0;
+    margin-top: 16px;
 }
 
-.option-text{
-    height: 63px;
+.reviews-list__title:hover {
+    color: #FF7931;
+}
+
+.review-list__description {
+    width: 370px;
+    font-family: "Roboto";
     font-style: normal;
-    font-weight: 400;
+    font-weight: normal;
     font-size: 14px;
     line-height: 21px;
-    margin-left: auto;
-    margin-right: auto;
+    color: #000000;
+
+    margin: 0;
     margin-top: 10px;
 }
 
-.tickets-btn{
-    margin-bottom: 36px;
-    width: 170px;
-    height: 47px;
-    background-color: #FF7931;
-    color: white;
-    border: none;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
+/*--------------------------Abonements section---------------------------------*/
+
+.abonements {
+    background-color: #F7F7F7;
+    margin-top: 50px;
+    position: relative;
+    min-height: 556px;
+    margin-bottom: 55px;
+    z-index: -2;
+}
+
+.abonements::before {
+    position: absolute;
+    content: "";
+    width: 707px;
+    height: 707px;
+    top: -73px;
+    left: 405px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    z-index: -1;
+}
+
+.abonements__title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    padding-right: 38px;
-}
+    color: #000000;
 
-.tickets button:hover{
-    background-color: #575757;
-    color: white;
-}
-
-.tickets button:active{
-    background-color: #a8a6a6;
-}
-
-
-.btn-logo{
-    position: absolute;
-    top: 15px;
-    right: 31px;
-}
-
-.footer{
-    background-color: #575757;
+    padding-top: 37px;
     margin: 0;
-    color: white;
-    text-align: center;
+    margin-left: 605px;
 }
 
-.footer .positioner{
-    min-height: 295px;
+.abonements-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 35px;
+    margin-bottom: 15px;
 }
 
-.footer-title{
-    font-family: 'Playfair Display', serif;
+.abonements-list__item {
+    margin-bottom: 49px;
+    position: relative;
+}
+
+.abonements-list__item::before {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 3px;
+    top: 98px;
+    left: 130px;
+    background-color: #F7F7F7;
+}
+
+.abonements-list__item:last-child::before {
+   display: none;
+}
+
+.abonements-list__title {
+    display: block;
+    font-family: "PlayfairDisplay";
     font-style: normal;
     font-weight: 900;
-    font-size: 28px;
-    line-height: 37px;
-    letter-spacing: 1px;
-    margin-bottom: 32px;
-    padding-top: 26px;
+    font-size: 23px;
+    line-height: 31px;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    margin: 0;
+    cursor: pointer;
 }
 
-.footer-menu{
+.abonements-list__description {
+    width: 370px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;
+    margin: 0;
+    margin-top: 7px;
+}
+
+.abonements__button {
+    font-size: 16px;
+    background-color: #FF7931;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+
+    margin-left: 635px;
+    padding: 15px 62px 14px 25px;
+    position: relative;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.abonements__button::before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    top: 15px;
+    left: 121px;
+    background-image: url("../img/icon-arrow.svg");
+    transform: rotate(-90deg);
+}
+
+
+/*--------------------------Footer---------------------------------*/
+footer {
+    background-color: #575757;
+    z-index: 100;
+}
+
+.footer-logo {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 580px;
+}
+
+.footer-navigation-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
     display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    margin-left: 135px;
+    margin-bottom: 30px;
+
+    position: relative;
+}
+
+.footer-navigation-list::before {
+    position: absolute;
+    content: "";
+    width: 1170px;
+    height: 0;
+    top: 66px;
+    left: 0;
+    opacity: 0.4;
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+
+.footer-navigation-list__item {
+    margin-right: 54px;
+}
+
+.footer-navigation-list__item:nth-child(3) {
+    margin-right: 49px;
+}
+
+.footer-navigation-list__item:nth-child(4) {
+    margin-right: 48px;
+}
+
+.footer-navigation-list__item:nth-child(7) {
+    margin-right: 47px;
+}
+
+.footer-navigation-list__item:last-child {
+    margin-right: 0;
+}
+
+.footer-navigation-list__link {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.social-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    margin-top: 90px;
     padding-bottom: 46px;
-    margin-bottom: 42px;
+    margin-left: 635px;
 }
 
-.footer a{
-    color: white;
-}
-
-.links{
-    display: flex;
-    justify-content: center;
-}
-
-.link-btn{
+.social-list__item {
     width: 47px;
     height: 47px;
-    background-color: #fff;
+    background-color: #ffffff;
+
     margin-right: 14px;
     display: flex;
-    justify-content: center;
     align-items: center;
-}
-
-.link-btn:last-child{
-    margin-left: 0;
-}
-
-.link-btn:hover{
-    background-color: #FF7931;
+    justify-content: center;
 }
